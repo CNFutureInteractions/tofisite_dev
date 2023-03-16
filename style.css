@@ -18,9 +18,7 @@ img {
 }
 
 video {
-    object-fit: cover;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+
     margin-left: 50vw;
     transform: translate(-50%);
 }
@@ -114,14 +112,10 @@ video {
     border-width: 0px 1px 0px 1px;
 }
 
-.dottedhr{
-    display:none
-}
-
 .process-container {
     box-sizing: border-box;
     position: relative;
-    height: 50vw;
+    height: 45vw;
     overflow: hidden;
     float: left;
     display: flex;
@@ -162,7 +156,7 @@ video {
     height: 100%;
     width: 100%;
     /* height: 30vw; */
-    /* border-width: 0px 1px 1px 0px; */
+    border-width: 0px 0px 0px 0px;
     overflow: hidden;
     float: left;
     display: flex;
@@ -171,7 +165,7 @@ video {
 
 .stage-number {
     position: relative;
-    top: 62%;
+    top: 55%;
     left: 0.75rem;
     border-radius: 50%;
     width: calc(100vw/55);
@@ -188,7 +182,7 @@ video {
 .stage-description {
     position: relative;
     /* float: bottom;     */
-    top: 65%;
+    top: 58%;
     left: 1.2vw;
     padding-right: 2vw;
     font-family: 'DM Mono';
@@ -212,7 +206,7 @@ video {
     box-sizing: border-box;
     float: left;
     width: 48vw;
-    border-width: 0px 1px 0px 0px;
+    border-width: 0px 1px 0px 1px;
 }
 
 .g-i-t-text {
@@ -226,7 +220,7 @@ video {
     padding: 2vw;
     padding-right: 10vw;
     /* background-color: rgb(69, 1, 255); */
-    border-width: 0px 1px 0px 1px;
+    border-width: 0px 0px 0px 1px;
 }
 
 .g-i-t-text a {
@@ -262,6 +256,12 @@ video {
     z-index: 1;
 }
 
+.dottedhr {
+display: none;
+    border-width: 0px 0px 0x 0px;
+    /* background-color: aqua; */
+
+}
 
 @media screen and (max-width: 650px) {
     .intro-container {
@@ -273,8 +273,8 @@ video {
 
     .intro-text {
 
-        font-size: 2.2rem;
-        line-height: 2.2rem;
+        font-size: 2.3rem;
+        line-height: 2.3rem;
         letter-spacing: -0.08rem;
         max-width: 90%;
         position: absolute;
@@ -306,22 +306,16 @@ video {
     }
 
     .wwd-text {
-        font-size: 2.2rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
         letter-spacing: -0.08rem;
         width: calc(100% - 40px);
         padding: 1rem 1rem 2rem 1rem;
         /* background-color: rgb(69, 1, 255); */
-        border-width: 1px 0px 1px 0px;
+        border-width: 0px 0px 0px 0px;
         background-color: rgb(0, 0, 0);
-        margin-left: 20px;
-        margin-right: 20px;
-        border-left: rgb(102, 102, 102);
-        border-right: rgb(102, 102, 102);
-        /* border-top: none; */
-        border-style: dotted;
-        border-bottom: none;
-        border-top: none;
+
+
     }
 
     .process-container {
@@ -334,20 +328,19 @@ video {
         float: left;
         display: flex;
         flex-direction: column;
-        
+
     }
 
-    .dottedhr{
-     display:flex;
-     margin: 0;
-     margin-bottom: 0.;
-     margin-left: auto;
-     margin-right: auto;
-     border-style: inset;
-     border-width: 1px;
-     width: 100%;
-     border-style: dotted;
-     border-color: rgb(102, 102, 102);
+    .dottedhr {
+        display: flex;
+        margin: 0;
+        margin-bottom: 0.;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 1px 0px 0px 0px;
+
+        width: 100%;
+
     }
 
     .stages {
@@ -356,7 +349,7 @@ video {
         box-sizing: border-box;
         float: left;
         width: 100%;
-        border-width: 0px 0px 0px 1px;
+        border-width: 0px 0px 0px 0px;
         height: 100%;
         top: 3rem;
     }
@@ -367,7 +360,7 @@ video {
         box-sizing: border-box;
         float: left;
         width: 100%;
-        border-width: 0px 1px 0px 1px;
+        border-width: 0px 0px 0px 0px;
         height: 100%;
     }
 
@@ -377,22 +370,12 @@ video {
         position: relative;
         padding: 1rem;
         height: 100%;
-        font-size: 2.2rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
         letter-spacing: -0.08rem;
         max-width: 100%;
         padding: 1rem 1rem 2rem 1rem;
-        /* background-color: rgb(69, 1, 255); */
-        border-width: 1px 0px 1px 0px;
-        background-color: rgb(0, 0, 0);
-        margin-left: 20px;
-        margin-right: 20px;
-        border-left: rgb(102, 102, 102);
-        border-right: rgb(102, 102, 102);
-        /* border-top: none; */
-        border-style: dotted;
-        border-bottom: none;
-        border-top: none;
+
     }
 
     .stage-container {
@@ -401,19 +384,10 @@ video {
         height: 100%;
         width: calc(100% - 40px);
         overflow: hidden;
-        padding: 1rem;
         padding: 1rem 1rem 2rem 1rem;
-        /* background-color: rgb(69, 1, 255); */
-        border-width: 1px 0px 1px 0px;
-        background-color: rgb(0, 0, 0);
+        border-width: 0px 1px 0px 1px;
         margin-left: 20px;
         margin-right: 20px;
-        border-left: rgb(102, 102, 102);
-        border-right: rgb(102, 102, 102);
-        /* border-top: none; */
-        border-style: dotted;
-        border-bottom: none;
-        border-top: none;
 
     }
 
@@ -427,7 +401,7 @@ video {
         height: 2.2rem;
         line-height: 2.2rem;
 
-        font-size:2.2rem;
+        font-size: 2.2rem;
     }
 
     .stage-description {
@@ -436,7 +410,7 @@ video {
         /* top: 65%; */
         top: 0px;
         left: 0px;
-        padding-top:1rem;
+        padding-top: 1rem;
         /* padding: 1rem; */
         font-size: 1.2rem;
         line-height: 1.6rem;
@@ -453,55 +427,49 @@ video {
         display: flex;
         flex-direction: column;
     }
-    
+
     .g-i-t-img {
-        width: calc(100vw - 40px);
-        border-width: 0px 1px 0px 1px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 100vw;
+        border-width: 1px 0px 0px 0px;
+
         border-left: rgb(102, 102, 102);
         border-right: rgb(102, 102, 102);
     }
-    
+
     .g-i-t-text {
         top: 0px;
         left: 0px;
         position: relative;
         padding: 1rem;
         height: 100%;
-        font-size: 2.2rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
         letter-spacing: -0.08rem;
         max-width: 100%;
-        width:auto;
+        width: auto;
         padding: 1rem 1rem 2rem 1rem;
         /* background-color: rgb(69, 1, 255); */
-        border-width: 1px 0px 1px 0px;
+        border-width: 0px 0px 0px 0px;
         background-color: rgb(0, 0, 0);
-        margin-left: 20px;
-        margin-right: 20px;
-        border-left: rgb(102, 102, 102);
-        border-right: rgb(102, 102, 102);
-        /* border-top: none; */
-        border-style: dotted;
-        border-bottom: none;
-        border-top: none;
+        width: 90%;
+
+
     }
-    
+
     .g-i-t-text a {
         color: rgb(255, 255, 255);
         font-family: 'DM Sans';
-        font-size: 2.2rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
     }
-    
+
     .footer {
 
-        margin-left:20px;
-        margin-right:20px;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 5px;
         font-size: 0.7rem;
         line-height: 0.8rem;
-    
+
     }
 }
